@@ -76,7 +76,7 @@
         android:text="your answer is" />
 
     <Button
-        android:id="@+id/plus"
+        android:id="@+id/add"
         style="?android:attr/buttonStyleSmall"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -90,9 +90,9 @@
         style="?android:attr/buttonStyleSmall"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/plus"
-        android:layout_alignBottom="@+id/plus"
-        android:layout_toRightOf="@+id/plus"
+        android:layout_alignBaseline="@+id/add"
+        android:layout_alignBottom="@+id/add"
+        android:layout_toRightOf="@+id/add"
         android:text="-" />
 
 </RelativeLayout>

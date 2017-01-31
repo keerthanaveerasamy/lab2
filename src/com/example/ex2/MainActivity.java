@@ -29,7 +29,7 @@ public class MainActivity extends AliasActivity implements OnClickListener
         //Referring the Views
         Num1 = (EditText) findViewById(R.id.n1);
         Num2 = (EditText) findViewById(R.id.n2);
-        Add = (Button) findViewById(R.id.plus);
+        Add = (Button) findViewById(R.id.add);
         Sub = (Button) findViewById(R.id.subtract);
         Mul = (Button) findViewById(R.id.multiply);
         Div = (Button) findViewById(R.id.divide);
@@ -63,7 +63,7 @@ public class MainActivity extends AliasActivity implements OnClickListener
         // write operation into oper, we will use it later for output
         switch (v.getId()) 
         {
-            case R.id.plus:
+            case R.id.add:
                 oper = "+";
                 result = num1 + num2;
                 break;
