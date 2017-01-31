@@ -1,17 +1,21 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_margin="20dp">
- 
+    android:layout_margin="20dp"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ENTER TWO VALUES:" />
+
     <LinearLayout
         android:id="@+id/linearLayout1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="20dp">
- 
+        android:layout_margin="20dp" >
+
         <EditText
             android:id="@+id/n1"
             android:layout_width="match_parent"
@@ -19,59 +23,67 @@
             android:layout_weight="1"
             android:inputType="numberDecimal"
             android:textSize="20sp" />
-  <EditText
+
+        <EditText
             android:id="@+id/n2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:inputType="numberDecimal"
             android:textSize="20sp" />
- 
     </LinearLayout>
+
     <LinearLayout
         android:id="@+id/linearLayout2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="20dp">
- 
+        android:layout_margin="20dp" >
+
         <Button
             android:id="@+id/add"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="+"
-            android:textSize="30sp"/>
+            android:textSize="30sp" />
+
         <Button
             android:id="@+id/subtract"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="-"
-            android:textSize="30sp"/>
- 
+            android:textSize="30sp" />
+
         <Button
             android:id="@+id/multiply"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="*"
-            android:textSize="30sp"/>
-  <Button
+            android:textSize="30sp" />
+
+        <Button
             android:id="@+id/divide"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="/"
-            android:textSize="30sp"/>
- 
+            android:textSize="30sp" />
     </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="225dp"
+        android:layout_height="wrap_content"
+        android:text="RESULT:" />
+
     <TextView
         android:id="@+id/result"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
-        android:text="Answer is"
-        android:textSize="30sp"
-        android:gravity="center"/>
- 
+        android:gravity="center"
+        android:textSize="30sp" />
+
 </LinearLayout>
